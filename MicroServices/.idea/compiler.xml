@@ -8,16 +8,19 @@
         <outputRelativeToContentRoot value="true" />
         <module name="TicketWay-ConfigServer" />
         <module name="User-Service" />
+        <module name="TicketWay-ServiceRegistry" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="TicketWay-ConfigServer" target="17" />
+      <module name="TicketWay-ServiceRegistry" target="17" />
       <module name="User-Service" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="TicketWay-ConfigServer" options="-parameters" />
+      <module name="TicketWay-ServiceRegistry" options="-parameters" />
       <module name="User-Service" options="-parameters" />
     </option>
   </component>
