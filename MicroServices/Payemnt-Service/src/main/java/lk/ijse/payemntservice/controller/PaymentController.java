@@ -1,5 +1,6 @@
 package lk.ijse.payemntservice.controller;
 
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,4 +13,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/actions")
 public class PaymentController {
+
+    @PostMapping("/validate")
+    public String add() {
+        return "Add";
+    }
+
+    @PostMapping("/process")
+    public String update() {
+        return "Update";
+    }
 }
