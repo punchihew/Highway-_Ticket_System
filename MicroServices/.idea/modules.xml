@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/MicroServices.iml" filepath="$PROJECT_DIR$/.idea/MicroServices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Payemnt-Service/Payemnt-Service.iml" filepath="$PROJECT_DIR$/Payemnt-Service/Payemnt-Service.iml" />
       <module fileurl="file://$PROJECT_DIR$/TicketWay-ConfigServer/TicketWay-ConfigServer.iml" filepath="$PROJECT_DIR$/TicketWay-ConfigServer/TicketWay-ConfigServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/TicketWay-ServiceRegistry/TicketWay-ServiceRegistry.iml" filepath="$PROJECT_DIR$/TicketWay-ServiceRegistry/TicketWay-ServiceRegistry.iml" />
       <module fileurl="file://$PROJECT_DIR$/User-Service/User-Service.iml" filepath="$PROJECT_DIR$/User-Service/User-Service.iml" />
