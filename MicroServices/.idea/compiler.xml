@@ -8,12 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="TicketWay-ServiceRegistry" />
         <module name="TicketWay-ConfigServer" />
+        <module name="Ticket-Service" />
         <module name="User-Service" />
         <module name="Payemnt-Service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Payemnt-Service" target="17" />
+      <module name="Ticket-Service" target="17" />
       <module name="TicketWay-ConfigServer" target="17" />
       <module name="TicketWay-ServiceRegistry" target="17" />
       <module name="User-Service" target="17" />
@@ -22,6 +24,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Payemnt-Service" options="-parameters" />
+      <module name="Ticket-Service" options="-parameters" />
       <module name="TicketWay-ConfigServer" options="-parameters" />
       <module name="TicketWay-ServiceRegistry" options="-parameters" />
       <module name="User-Service" options="-parameters" />
