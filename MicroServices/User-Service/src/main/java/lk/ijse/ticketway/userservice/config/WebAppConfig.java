@@ -1,52 +1,15 @@
 package lk.ijse.ticketway.userservice.config;
 
-import lk.ijse.ticketway.userservice.util.ResponseDTO;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.modelmapper.ModelMapper;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
-/**
- * @version: v0.0.1
- * @author: Navishka
- * @date: 7/1/2024
- */
-@RestController
-@RequestMapping("/actions")
-public class TicketController {
 
-    private final TicketService ticketService;
+@Configuration
+public class WebAppConfig {
 
-    public TicketController(TicketService ticketService) {
-        this.ticketService = ticketService;
+    @Bean
+    public ModelMapper mapper(){
+        return new ModelMapper();
     }
-
-    @PostMapping("/save")
-    public ResponseDTO add(@RequestBody TicketDTO ticketDTO) {
-        try {
-            return ticketService.save(ticketDTO);
-        } catch (Exception e) {
-            return new ResponseDTO(e.getMessage(), 500);
-
-        }
-    }
-
-    @PutMapping("/update")
-    public ResponseDTO update(@RequestBody TicketDTO ticketDTO) {
-        try {
-            return ticketService.update(ticketDTO);
-        } catch (Exception e) {
-            return new ResponseDTO(e.getMessage(), 500);
-        }
-    }
-
-    @GetMapping
-    public ResponseDTO get() {
-        try {
-            return ticketService.getAll();
-        } catch (Exception e) {
-            return new ResponseDTO(e.getMessage(), 500);
-        }
-    }
-
 }
