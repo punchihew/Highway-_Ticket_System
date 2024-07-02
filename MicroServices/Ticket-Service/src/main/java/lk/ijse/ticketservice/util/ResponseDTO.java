@@ -11,7 +11,9 @@ import java.util.HashMap;
  * @author: Navishka
  * @date: 7/2/2024
  */
-
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class ResponseDTO {
     private int status;
     private String message;
