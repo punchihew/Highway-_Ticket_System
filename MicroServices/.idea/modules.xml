@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/TicketWay-ConfigServer/TicketWay-ConfigServer.iml" filepath="$PROJECT_DIR$/TicketWay-ConfigServer/TicketWay-ConfigServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/TicketWay-ServiceRegistry/TicketWay-ServiceRegistry.iml" filepath="$PROJECT_DIR$/TicketWay-ServiceRegistry/TicketWay-ServiceRegistry.iml" />
       <module fileurl="file://$PROJECT_DIR$/User-Service/User-Service.iml" filepath="$PROJECT_DIR$/User-Service/User-Service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Vehicle-Service/Vehicle-Service.iml" filepath="$PROJECT_DIR$/Vehicle-Service/Vehicle-Service.iml" />
     </modules>
   </component>
 </project>
