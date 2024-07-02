@@ -27,6 +27,15 @@ public class TicketController {
         }
     }
 
+    @PutMapping("/update")
+    public ResponseDTO update(@RequestBody TicketDTO ticketDTO) {
+        try {
+            return ticketService.update(ticketDTO);
+        } catch (Exception e) {
+            return new ResponseDTO(e.getMessage(), 500);
+        }
+    }
+
 
 
 }
