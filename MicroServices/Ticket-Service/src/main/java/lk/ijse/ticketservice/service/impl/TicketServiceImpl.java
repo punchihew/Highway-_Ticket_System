@@ -34,5 +34,11 @@ public class TicketServiceImpl implements TicketService {
         return new ResponseDTO("Ticket updated successfully", 200);
     }
 
-
+    @Override
+    public ResponseDTO getAll() {
+        List<Ticket> all = ticketRepository.findAll();
+        HashMap<String, Object> objectObjectHashMap = new HashMap<>();
+        objectObjectHashMap.put("tickets", all);
+        return new ResponseDTO(200, "Ticket fetched successfully", objectObjectHashMap);
+    }
 }
