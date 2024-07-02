@@ -1,5 +1,6 @@
 package lk.ijse.ticketservice.service;
 
+import lk.ijse.ticketservice.dto.TicketDTO;
 import lk.ijse.ticketservice.util.ResponseDTO;
 
 /**
