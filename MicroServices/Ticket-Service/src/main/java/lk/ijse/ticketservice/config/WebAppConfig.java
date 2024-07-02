@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
  * @author: Navishka
  * @date: 7/2/2024
  */
-
+@Configuration
 public class WebAppConfig {
 
     @Bean
