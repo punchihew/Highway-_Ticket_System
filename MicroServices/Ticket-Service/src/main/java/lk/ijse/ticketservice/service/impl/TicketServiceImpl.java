@@ -17,6 +17,10 @@ public class TicketServiceImpl implements TicketService {
     private final TicketRepository ticketRepository;
     private final ModelMapper mapper;
 
+    public TicketServiceImpl(TicketRepository ticketRepository, ModelMapper mapper) {
+        this.ticketRepository = ticketRepository;
+        this.mapper = mapper;
+    }
 
 
 
