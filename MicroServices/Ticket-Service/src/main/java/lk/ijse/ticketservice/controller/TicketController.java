@@ -36,6 +36,13 @@ public class TicketController {
         }
     }
 
-
+    @GetMapping
+    public ResponseDTO get() {
+        try {
+            return ticketService.getAll();
+        } catch (Exception e) {
+            return new ResponseDTO(e.getMessage(), 500);
+        }
+    }
 
 }
