@@ -17,6 +17,16 @@ public class TicketController {
         this.ticketService = ticketService;
     }
 
+    @PostMapping("/save")
+    public ResponseDTO add(@RequestBody TicketDTO ticketDTO) {
+        try {
+            return ticketService.save(ticketDTO);
+        } catch (Exception e) {
+            return new ResponseDTO(e.getMessage(), 500);
+
+        }
+    }
+
 
 
 }
