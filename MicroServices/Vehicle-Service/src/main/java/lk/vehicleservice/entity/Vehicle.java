@@ -5,5 +5,5 @@ package lk.vehicleservice.entity;
  * @author: Navishka
  * @date: 7/2/2024
  */
-public class Vehicale {
+public class Vehicle {
 }
