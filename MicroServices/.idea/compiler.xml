@@ -11,11 +11,13 @@
         <module name="Ticket-Service" />
         <module name="User-Service" />
         <module name="Payemnt-Service" />
+        <module name="TicketWay-ApiGateWay" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Payemnt-Service" target="17" />
       <module name="Ticket-Service" target="17" />
+      <module name="TicketWay-ApiGateWay" target="17" />
       <module name="TicketWay-ConfigServer" target="17" />
       <module name="TicketWay-ServiceRegistry" target="17" />
       <module name="User-Service" target="17" />
@@ -25,6 +27,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Payemnt-Service" options="-parameters" />
       <module name="Ticket-Service" options="-parameters" />
+      <module name="TicketWay-ApiGateWay" options="-parameters" />
       <module name="TicketWay-ConfigServer" options="-parameters" />
       <module name="TicketWay-ServiceRegistry" options="-parameters" />
       <module name="User-Service" options="-parameters" />

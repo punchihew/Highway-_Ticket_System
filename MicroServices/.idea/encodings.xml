@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/Payemnt-Service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Ticket-Service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TicketWay-ApiGateWay/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/TicketWay-ConfigServer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/TicketWay-ServiceRegistry/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/User-Service/src/main/java" charset="UTF-8" />

@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/TicketWay-ServiceRegistry/pom.xml" />
         <option value="$PROJECT_DIR$/Payemnt-Service/pom.xml" />
         <option value="$PROJECT_DIR$/Ticket-Service/pom.xml" />
+        <option value="$PROJECT_DIR$/TicketWay-ApiGateWay/pom.xml" />
       </list>
     </option>
   </component>
