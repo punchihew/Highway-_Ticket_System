@@ -22,7 +22,11 @@ public class TicketServiceImpl implements TicketService {
         this.mapper = mapper;
     }
 
-
+    @Override
+    public ResponseDTO save(TicketDTO ticketDTO) {
+        ticketRepository.save(mapper.map(ticketDTO, Ticket.class));
+        return new ResponseDTO("Ticket saved successfully", 200);
+    }
 
 
 
