@@ -23,5 +23,14 @@ public class Vehicle {
     private String vehicleBrand;
     private String vehicleModel;
     private String vehicleYear;
-
+    private String vehicleColor;
+    private String vehicleFuelType;
+    private String vehicleTransmissionType;
+    private String vehicleEngineCapacity;
+    private String vehicleMileage;
+    private String vehiclePrice;
+    private String vehicleStatus;
+    private String vehicleLocation;
+    private String vehicleDate;
+    private String vehicleTime;
 }
