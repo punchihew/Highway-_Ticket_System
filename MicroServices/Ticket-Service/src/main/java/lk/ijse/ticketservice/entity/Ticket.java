@@ -14,7 +14,11 @@ import lombok.Setter;
  * @author: Navishka
  * @date: 7/2/2024
  */
-
+@Entity
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Ticket {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
