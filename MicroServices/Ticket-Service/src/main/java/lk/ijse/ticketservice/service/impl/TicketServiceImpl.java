@@ -1,4 +1,4 @@
-package lk.ijse.ticketservice.service;
+package lk.ijse.ticketservice.service.impl;
 
 /**
  * @version: v0.0.1
