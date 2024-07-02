@@ -9,7 +9,9 @@ import lombok.NoArgsConstructor;
  * @author: Navishka
  * @date: 7/2/2024
  */
-
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class TicketDTO {
     private Long id;
     private String ticketId;
