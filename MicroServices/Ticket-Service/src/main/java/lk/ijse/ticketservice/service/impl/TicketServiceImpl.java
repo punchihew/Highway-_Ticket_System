@@ -1,5 +1,6 @@
 package lk.ijse.ticketservice.service.impl;
 
+import lk.ijse.ticketservice.service.TicketService;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
