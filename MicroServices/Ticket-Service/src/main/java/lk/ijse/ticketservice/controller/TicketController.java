@@ -1,6 +1,5 @@
 package lk.ijse.ticketservice.controller;
 
-import lk.ijse.ticketservice.service.TicketService;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -8,7 +7,8 @@ import org.springframework.web.bind.annotation.*;
  * @author: Navishka
  * @date: 7/2/2024
  */
-
+@RestController
+@RequestMapping("/actions")
 public class TicketController {
 
     private final TicketService ticketService;
