@@ -28,7 +28,11 @@ public class TicketServiceImpl implements TicketService {
         return new ResponseDTO("Ticket saved successfully", 200);
     }
 
-
+    @Override
+    public ResponseDTO update(TicketDTO ticketDTO) {
+        ticketRepository.save(mapper.map(ticketDTO, Ticket.class));
+        return new ResponseDTO("Ticket updated successfully", 200);
+    }
 
 
 }
