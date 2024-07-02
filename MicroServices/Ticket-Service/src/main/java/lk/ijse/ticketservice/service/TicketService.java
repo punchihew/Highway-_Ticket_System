@@ -1,5 +1,7 @@
 package lk.ijse.ticketservice.service;
 
+import lk.ijse.ticketservice.util.ResponseDTO;
+
 /**
  * @version: v0.0.1
  * @author: Navishka
