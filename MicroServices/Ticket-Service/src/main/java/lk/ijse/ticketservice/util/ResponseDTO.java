@@ -1,8 +1,6 @@
 package lk.ijse.ticketservice.util;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.HashMap;
 
@@ -11,7 +9,8 @@ import java.util.HashMap;
  * @author: Navishka
  * @date: 7/2/2024
  */
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class ResponseDTO {

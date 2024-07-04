@@ -2,6 +2,8 @@ package lk.ijse.ticketservice.service.impl;
 
 import lk.ijse.ticketservice.dto.TicketDTO;
 import lk.ijse.ticketservice.entity.Ticket;
+import lk.ijse.ticketservice.entity.User;
+import lk.ijse.ticketservice.entity.Vehicle;
 import lk.ijse.ticketservice.repository.TicketRepository;
 import lk.ijse.ticketservice.service.TicketService;
 import lk.ijse.ticketservice.util.ResponseDTO;
