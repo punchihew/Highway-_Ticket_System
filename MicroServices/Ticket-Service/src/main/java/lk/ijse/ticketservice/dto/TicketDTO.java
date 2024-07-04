@@ -1,15 +1,14 @@
 package lk.ijse.ticketservice.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 /**
  * @version: v0.0.1
  * @author: Navishka
  * @date: 7/2/2024
  */
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class TicketDTO {
@@ -22,4 +21,6 @@ public class TicketDTO {
     private String ticketTime;
     private String ticketStatus;
     private String ticketLocation;
+    private String userName;
+    private String vehicleNumber;
 }
