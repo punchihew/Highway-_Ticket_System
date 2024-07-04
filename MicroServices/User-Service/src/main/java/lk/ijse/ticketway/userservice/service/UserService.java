@@ -6,7 +6,7 @@ import lk.ijse.ticketway.userservice.dto.UserDTO;
 /**
  * @version: v0.0.1
  * @author: Navishka
- * @date: 7/1/2024
+ * @date: 7/4/2024
  */
 public interface UserService {
     void registerUser(UserDTO userDTO);
@@ -14,4 +14,6 @@ public interface UserService {
     boolean loginUser(LoginDTO loginDTO);
 
     void updateUser(UserDTO userDTO);
+
+    UserDTO getUser(String email);
 }

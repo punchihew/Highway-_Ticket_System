@@ -1,6 +1,5 @@
 package lk.ijse.ticketway.userservice.service.impl;
 
-
 import lk.ijse.ticketway.userservice.dto.LoginDTO;
 import lk.ijse.ticketway.userservice.dto.UserDTO;
 import lk.ijse.ticketway.userservice.entity.User;
@@ -12,11 +11,10 @@ import org.springframework.stereotype.Service;
 import java.util.logging.Logger;
 
 /**
-@version: v0.0.1
-@author: Navishka
-@date: 7/1/2024
-*/
-
+ * @version: v0.0.1
+ * @author: Navishka
+ * @date: 7/4/2024
+ */
 @Service
 public class UserServiceImpl implements UserService {
 
@@ -49,4 +47,11 @@ public class UserServiceImpl implements UserService {
         });
         logger.info("User Updated Successfully");
     }
+
+    @Override
+    public UserDTO getUser(String email) {
+        User byName = userRepository.findByEmail(email);
+        return mapper.map(byName, UserDTO.class);
+    }
 }
+

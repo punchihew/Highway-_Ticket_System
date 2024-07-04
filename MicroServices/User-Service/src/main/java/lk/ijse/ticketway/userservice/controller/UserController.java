@@ -6,10 +6,12 @@ import lk.ijse.ticketway.userservice.service.UserService;
 import lk.ijse.ticketway.userservice.util.ResponseDTO;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
+
 /**
  * @version: v0.0.1
  * @author: Navishka
- * @date: 7/1/2024
+ * @date: 7/4/2024
  */
 @RestController
 @RequestMapping("/actions")
@@ -46,6 +48,18 @@ public class UserController {
         try{
             userService.updateUser(userDTO);
             return new ResponseDTO("User Updated Successfully", 200);
+        } catch (Exception e) {
+            return new ResponseDTO(e.getMessage(), 500);
+        }
+    }
+
+    @GetMapping("/get-user/{email}")
+    public ResponseDTO getUser(@PathVariable String email){
+        System.out.println(email);
+        try{
+            HashMap<String, Object> objectObjectHashMap = new HashMap<>();
+            objectObjectHashMap.put("user", userService.getUser(email));
+            return new ResponseDTO(200,"User Found Success Full !" ,objectObjectHashMap);
         } catch (Exception e) {
             return new ResponseDTO(e.getMessage(), 500);
         }
