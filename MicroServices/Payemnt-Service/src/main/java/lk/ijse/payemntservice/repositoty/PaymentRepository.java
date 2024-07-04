@@ -1,5 +1,6 @@
 package lk.ijse.payemntservice.repositoty;
 
+import lk.ijse.payemntservice.entity.Payment;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
