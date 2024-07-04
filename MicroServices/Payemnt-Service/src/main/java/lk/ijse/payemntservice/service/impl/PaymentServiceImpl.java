@@ -2,6 +2,7 @@ package lk.ijse.payemntservice.service.impl;
 
 import lk.ijse.payemntservice.dto.PaymentDTO;
 import lk.ijse.payemntservice.entity.Payment;
+import lk.ijse.payemntservice.entity.Ticket;
 import lk.ijse.payemntservice.repositoty.PaymentRepository;
 import lk.ijse.payemntservice.service.PaymentService;
 import lk.ijse.payemntservice.util.ResponseDTO;
