@@ -8,6 +8,7 @@ import lk.ijse.ticketservice.repository.TicketRepository;
 import lk.ijse.ticketservice.service.TicketService;
 import lk.ijse.ticketservice.util.ResponseDTO;
 import org.modelmapper.ModelMapper;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.client.RestTemplate;
@@ -26,6 +27,7 @@ public class TicketServiceImpl implements TicketService {
 
     private final TicketRepository ticketRepository;
     private final ModelMapper mapper;
+
 
     private final RestTemplate restTemplate;
 
