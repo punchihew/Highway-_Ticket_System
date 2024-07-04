@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "5a9838ea-a63c-42a8-9984-bf7d8d1d99e3",
+		"name": "Payment-Services",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28033196",
+		"_collection_link": "https://www.postman.com/blue-sunset-471412/workspace/highway-ticket-management-system/collection/28033196-5a9838ea-a63c-42a8-9984-bf7d8d1d99e3?action=share&source=collection_link&creator=28033196"
+	},
+	"item": [
+		{
+			"name": "add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":null,\n    \"paymentId\":\"PAY-001\",\n    \"paymentType\":\"Cash\",\n    \"paymentAmount\":2232.33,\n    \"paymentTime\":\"8.30PM\",\n    \"paymentStatus\":\"FINISH\",\n    \"paymentLocation\":\"Matara\",\n    \"ticketId\":1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/payment/actions/validate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"payment",
+						"actions",
+						"validate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

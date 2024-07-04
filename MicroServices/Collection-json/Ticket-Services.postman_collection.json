@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "8992fb74-a734-44be-bc7f-f8863fa667b6",
+		"name": "Ticket-Services",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28033196",
+		"_collection_link": "https://www.postman.com/blue-sunset-471412/workspace/highway-ticket-management-system/collection/28033196-8992fb74-a734-44be-bc7f-f8863fa667b6?action=share&source=collection_link&creator=28033196"
+	},
+	"item": [
+		{
+			"name": "retrieval",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/ticket/actions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"ticket",
+						"actions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Creation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":null,\n    \"ticketId\":\"TIK-006\",\n    \"ticketType\":\"STANDERD\",\n    \"ticketPrice\":\"1200\",\n    \"ticketQty\":\"5000\",\n    \"ticketDate\":\"2022-01\",\n    \"ticketTime\":\"8.30\",\n    \"ticketStatus\":\"AVAILABLE\",\n    \"ticketLocation\":\"GALLE\",\n    \"userName\":\"kamal@gmail.com\",\n    \"vehicleNumber\":\"NA-2223\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/ticket/actions/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"ticket",
+						"actions",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":1,\n    \"ticketId\":\"TIK-001\",\n    \"ticketType\":\"STANDERD\",\n    \"ticketPrice\":\"1200\",\n    \"ticketQty\":\"5000\",\n    \"ticketDate\":\"2022-01\",\n    \"ticketTime\":\"8.30\",\n    \"ticketStatus\":\"AVAILABLE\",\n    \"ticketLocation\":\"GALLE\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/ticket/actions/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"ticket",
+						"actions",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetTicket",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/ticket/actions/get-ticket/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"ticket",
+						"actions",
+						"get-ticket",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

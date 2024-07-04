@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "2e68fe23-64f8-456f-98e3-4a3c7b979d4d",
+		"name": "Vehicle-services",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28033196",
+		"_collection_link": "https://www.postman.com/blue-sunset-471412/workspace/highway-ticket-management-system/collection/28033196-2e68fe23-64f8-456f-98e3-4a3c7b979d4d?action=share&source=collection_link&creator=28033196"
+	},
+	"item": [
+		{
+			"name": "retrval",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/vehicle/actions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"vehicle",
+						"actions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":null,\n    \"vehicleNumber\":\"NA-2223\",\n    \"vehicleType\":\"LORRY\",\n    \"vehicleBrand\":\"NISSAN\",\n    \"vehicleModel\":\"LORRY\",\n    \"vehicleYear\":\"2022\",\n    \"vehicleColor\":\"WHITE\",\n    \"vehicleFuelType\":\"PETROL\",\n    \"vehicleTransmissionType\":\"MANUAL\",\n    \"vehicleEngineCapacity\":\"4500 CC\",\n    \"vehicleMileage\":\"1209887\",\n    \"vehicleStatus\":\"NOT GOING\",\n    \"vehicleLocation\":\"PNADURA\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/vehicle/actions/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"vehicle",
+						"actions",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":1,\n    \"vehicleNumber\":\"NA-2223\",\n    \"vehicleType\":\"LORRY\",\n    \"vehicleBrand\":\"NISSAN\",\n    \"vehicleModel\":\"LORRY\",\n    \"vehicleYear\":\"2022\",\n    \"vehicleColor\":\"WHITE\",\n    \"vehicleFuelType\":\"PETROL\",\n    \"vehicleTransmissionType\":\"MANUAL\",\n    \"vehicleEngineCapacity\":\"4500 CC\",\n    \"vehicleMileage\":\"1209887\",\n    \"vehicleStatus\":\"NOT GOING\",\n    \"vehicleLocation\":\"PNADURA\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/vehicle/actions/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"vehicle",
+						"actions",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetVehicle",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/vehicle/actions/get-vehicle/NA-2223",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"vehicle",
+						"actions",
+						"get-vehicle",
+						"NA-2223"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
