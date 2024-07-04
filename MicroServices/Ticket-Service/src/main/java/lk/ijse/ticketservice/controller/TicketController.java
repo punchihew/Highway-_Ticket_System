@@ -22,6 +22,7 @@ public class TicketController {
 
     @PostMapping("/save")
     public ResponseDTO add(@RequestBody TicketDTO ticketDTO) {
+        System.out.println(ticketDTO.toString());
         try {
             return ticketService.save(ticketDTO);
         } catch (Exception e) {
@@ -43,6 +44,15 @@ public class TicketController {
     public ResponseDTO get() {
         try {
             return ticketService.getAll();
+        } catch (Exception e) {
+            return new ResponseDTO(e.getMessage(), 500);
+        }
+    }
+
+    @GetMapping("/get-ticket/{id}")
+    public ResponseDTO getTicket(@PathVariable Long id) {
+        try {
+            return ticketService.getTicket(id);
         } catch (Exception e) {
             return new ResponseDTO(e.getMessage(), 500);
         }
