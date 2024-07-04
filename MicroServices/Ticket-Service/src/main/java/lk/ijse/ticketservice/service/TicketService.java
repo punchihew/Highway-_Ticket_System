@@ -14,4 +14,6 @@ public interface TicketService {
     ResponseDTO update(TicketDTO ticketDTO);
 
     ResponseDTO getAll();
+
+    ResponseDTO getTicket(Long id);
 }
