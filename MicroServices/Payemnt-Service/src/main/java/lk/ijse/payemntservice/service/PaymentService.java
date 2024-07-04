@@ -1,6 +1,7 @@
 package lk.ijse.payemntservice.service;
 
 import lk.ijse.payemntservice.dto.PaymentDTO;
+import lk.ijse.payemntservice.entity.Payment;
 import lk.ijse.payemntservice.util.ResponseDTO;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
