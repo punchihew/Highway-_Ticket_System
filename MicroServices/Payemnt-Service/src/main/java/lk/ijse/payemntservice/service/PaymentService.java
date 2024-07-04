@@ -6,4 +6,7 @@ package lk.ijse.payemntservice.service;
  * @date: 7/4/2024
  */
 public interface PaymentService {
+    ResponseDTO add(PaymentDTO paymentDTO);
+
+    ResponseDTO update(PaymentDTO paymentDTO);
 }
