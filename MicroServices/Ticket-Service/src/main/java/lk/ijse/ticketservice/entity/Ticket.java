@@ -1,9 +1,6 @@
 package lk.ijse.ticketservice.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -31,4 +28,13 @@ public class Ticket {
     private String ticketTime;
     private String ticketStatus;
     private String ticketLocation;
+
+    @ManyToOne
+    private User user;
+
+    @OneToOne(mappedBy = "ticket")
+    private Payment payment;
+
+    @ManyToOne
+    private Vehicle vehicle;
 }
