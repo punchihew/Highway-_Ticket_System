@@ -1,5 +1,6 @@
 package lk.ijse.payemntservice.controller;
 
+import lk.ijse.payemntservice.dto.PaymentDTO;
 import lk.ijse.payemntservice.util.ResponseDTO;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
