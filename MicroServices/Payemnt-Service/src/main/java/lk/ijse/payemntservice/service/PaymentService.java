@@ -1,4 +1,4 @@
-package lk.ijse.payemntservice.service.impl;
+package lk.ijse.payemntservice.service;
 
 import lk.ijse.payemntservice.dto.PaymentDTO;
 import lk.ijse.payemntservice.util.ResponseDTO;

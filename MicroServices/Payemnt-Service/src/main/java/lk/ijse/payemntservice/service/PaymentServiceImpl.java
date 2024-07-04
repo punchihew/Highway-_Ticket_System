@@ -1,4 +1,4 @@
-package lk.ijse.payemntservice.service.impl;
+package lk.ijse.payemntservice.service;
 
 /**
  * @version: v0.0.1
